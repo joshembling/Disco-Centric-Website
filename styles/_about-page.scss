@@ -1,0 +1,29 @@
+.about-page {
+  padding: 90px 0 40px 0;
+  background-color: #1fd1f9;
+  background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .about-page {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .about-page {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 300px) {
+  .about-page {
+    font-size: 14px;
+  }
+}
