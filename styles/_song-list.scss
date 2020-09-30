@@ -1,0 +1,89 @@
+// ACCORDION
+
+.song-list {
+  padding: 90px 0 40px 0;
+  background-color: #5de6de;
+  background-image: linear-gradient(315deg, #5de6de 0%, #b58ecc 74%);
+
+  .accordion {
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    width: 100%;
+    background: rgba(106, 9, 125, 0.8) !important;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    transition: 0.4s;
+    flex-wrap: wrap;
+    background: none;
+    font-family: inherit;
+    margin: 3px 0;
+  }
+
+  .accordion:focus {
+    border: none;
+  }
+
+  .active,
+  .accordion:hover {
+    opacity: 0.8;
+  }
+
+  .accordion:after {
+    content: '\2715';
+    transform: rotate(45deg);
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    transition: 0.3s ease-in;
+  }
+
+  .active:after {
+    content: '\2715';
+    transform: rotate(90deg);
+    transition: 0.3s ease-in;
+  }
+
+  .panel {
+    margin: 0px;
+    padding: 0px 10px;
+    color: #fff;
+    background-color: #7f53ac;
+    background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 2rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    text-align: center;
+    font-size: 18px;
+    p {
+      padding: 10px 0 0 0;
+    }
+  }
+
+  ul {
+    display: block;
+  }
+
+  ul li {
+    list-style: none;
+  }
+
+  ul li a {
+    text-decoration: none;
+    color: #515154;
+  }
+
+  .panel a:hover {
+    color: rgb(52, 52, 52);
+    text-decoration: underline;
+  }
+}
