@@ -1,0 +1,97 @@
+.packages::before {
+  background: url(/img/crowd2.jpg) no-repeat fixed center;
+  background-size: cover;
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.1;
+}
+
+.packages {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 50px 0;
+
+  h6 {
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  .disco-male {
+    max-width: 200px;
+  }
+  .disco-female {
+    max-width: 230px;
+  }
+
+  .wrap {
+    margin: auto;
+  }
+
+  .table-packages {
+    background: #6a097d;
+    opacity: 0.9;
+    color: white;
+  }
+
+  // COLORS
+
+  .purple {
+    background-color: #a4508b;
+    background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+  }
+
+  .silver {
+    background-color: #b8c6db;
+    background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+    color: black;
+  }
+
+  .gold {
+    background-color: #ebbe9b;
+    background-image: linear-gradient(315deg, #ebbe9b 0%, #e7a977 74%);
+    color: black;
+  }
+
+  .platinum {
+    background-color: #b3cdd1;
+    background-image: linear-gradient(315deg, #b3cdd1 0%, #9fa4c4 74%);
+    color: black;
+  }
+
+  tr,
+  th,
+  td {
+    vertical-align: middle;
+  }
+
+  @media (max-width: 1199px) {
+    .table-packages {
+      font-size: 15px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .disco-male,
+    .disco-female {
+      display: none;
+    }
+
+    .table-packages {
+      font-size: 10px;
+    }
+  }
+
+  @media (max-width: 300px) {
+    p {
+      font-size: 10px;
+    }
+  }
+}
